@@ -1,16 +1,68 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Albert_Sans, Antonio, BBH_Bartle, Cinzel, Geist, Geist_Mono, Gravitas_One, Montserrat, Spline_Sans, Inter, Exo } from "next/font/google";
 import "./globals.css";
+import { Spline } from "lucide-react";
+import { cn } from "@/lib/utils";
+import Navbar1 from "@/components/home/navBar1";
+
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+
+
+
+
+const albert_normal = Albert_Sans({
+  weight:"400",
+  variable: "--font-albert-normal",
   subsets: ["latin"],
 });
+
+
+const spline_normal= Spline_Sans({
+  
+weight:"400",
+  variable: "--font-spline-normal",
+  subsets: ["latin"],
+ 
+});
+const spline_bold= Spline_Sans({
+  
+weight:"600",
+  variable: "--font-spline-bold",
+  subsets: ["latin"],
+ 
+});
+const exo_normal= Exo({
+  
+weight:"400",
+  variable: "--font-exo-normal",
+  subsets: ["latin"],
+ 
+});
+const exo_semibold= Exo({  
+weight:"600",
+  variable: "--font-exo-bold",
+  subsets: ["latin"],
+ 
+});
+const exo_bold= Exo({  
+weight:"800",
+  variable: "--font-exo-bold",
+  subsets: ["latin"],
+ 
+});
+
+const albert_bold = Albert_Sans({
+  weight:"800",
+  variable: "--font-albert-bold",
+  subsets: ["latin"],
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,9 +73,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", albert_normal.variable, spline_normal.variable,exo_normal.variable, "font-sans", inter.variable)}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className=" bg-black">
+           <Navbar1/> {children}</body>
     </html>
   );
 }
