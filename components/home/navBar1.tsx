@@ -7,10 +7,10 @@ export default function Navbar1() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Sobre nosotros', href: '/sobre-nosotros' },
-    { name: 'Explora', href: '/explora' },
-    { name: 'Contacto', href: '/contacto' },
+    { name: 'Home', href: '/' },  
+    { name: 'Explora', href: '/courses' },
+      { name: 'Sobre nosotros', href: '/about' },
+    { name: 'Contacto', href: '/contact' },
   ];
 
   return (

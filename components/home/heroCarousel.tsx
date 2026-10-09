@@ -31,10 +31,10 @@ const SLIDES = [
   },
   {
     id: 2,
-    title: "Innovación y Rendimiento con Next.js",
-    title1:" 3D DESIGNER",
+    title: "Crea Mundos Increíbles, personajes y Enemigos 3D",
+    title1:" Transforma tu pasión por el anime y los videojuegos en tu profesión.",
     subtitle:
-      "Experiencias de usuario ultrarrápidas y optimizadas para SEO con la tecnología más moderna.",
+      "Te enseñamos las técnicas avanzadas de modelado, texturizado y renderizado 3D para llevar tus ideas artísticas a la pantalla.",
     ctaText: "Ver Portafolio",
     ctaHref: "/portfolio",
     secondaryCtaText: "Contáctanos",
@@ -87,16 +87,16 @@ export function HeroCarousel() {
               </div>
 
               {/* Contenido principal del Hero */}
-              <div className="relative z-10 flex h-full items-center justify-start  text-center px-4 sm:px-6 lg:px-20">
+              <div className="relative z-10 flex h-full items-center justify-start  text-center px-4 sm:px-6 lg:px-10">
                
-                <div className="max-w-xl space-y-10 bg-black/40  p-8">
-                  <h1 className="text-2xl  font-semibold tracking-wide text-[#ff5fd0] sm:text-2xl md:text-6xl lg:text-3xl">
+                <div className="max-w-2xl space-y-8 bg-black/40  p-8">
+                  <h1 className="text-2xl  font-semibold tracking-wide text-[#ff5fd0] sm:text-2xl md:text-6xl lg:text-3xl px-10">
                     {slide.title}
                   </h1>
                   <h2 className="text-xl  text-center tracking-tight text-[#ff5fd0] sm:text-md md:text-md lg:text-xl">
                     {slide.title1}
                   </h2>
-                  <p className="mx-auto  px-4 text-2xl text-[#faec93] sm:text-sm md:text-md text-start">
+                  <p className="mx-auto lg:text-xl text-[#faec93] sm:text-sm md:text-md text-start px-10">
                     {slide.subtitle}
                   </p>
 
