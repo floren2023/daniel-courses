@@ -9,7 +9,7 @@ import { FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#faec93] text-black py-12 px-4 sm:px-6 lg:px-8 border-t border-yellow-200">
+    <footer className="w-full bg-[#faec93] text-black py-12 px-4 sm:px-6 lg:px-8 border-t border-yellow-200 z-60">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-between">
         
         {/* Columna 1: Logo y eslogan */}

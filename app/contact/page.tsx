@@ -23,6 +23,7 @@ import {
   Palette,
   Film
 } from 'lucide-react';
+import Footer from '@/components/footer';
 
 // ==========================================
 // 1. DEFINICIÓN DE INTERFACES Y TIPOS
@@ -296,9 +297,11 @@ export default function ContactPage(): React.ReactElement {
   // ==========================================
 
   return (
-    <div className="relative  bg-black text-slate-100 font-sans overflow-x-hidden selection:bg-pink-600 selection:text-white">
+    <>
+     <div className="relative mt-40  bg-black text-slate-100 font-sans overflow-x-hidden selection:bg-pink-600 selection:text-white">
       {/* Fondo interactivo Canvas */}
-      <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none z-0" />
+      <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none z-0 h-[1350px]" />
+     
 
       {/* Gradientes decorativos de fondo */}
       <div className="fixed top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-900/30 rounded-full blur-[140px] pointer-events-none z-0" />
@@ -640,7 +643,7 @@ export default function ContactPage(): React.ReactElement {
         </div>
 
         {/* SECCIÓN FAQ */}
-        <section className="mt-24 max-w-4xl mx-auto">
+        <section className="mt-24 max-w-4xl mx-auto ">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4 flex items-center justify-center gap-2">
               <HelpCircle className="w-6 h-6 text-amber-300" />
@@ -681,11 +684,12 @@ export default function ContactPage(): React.ReactElement {
             ))}
           </div>
         </section>
-
+       
       </div>
+      
 
       {/* MODAL DE CONFIRMACIÓN DE ENVÍO */}
-      {showModal && (
+       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
           <div className="bg-zinc-950 border border-purple-500/50 p-8 rounded-3xl max-w-md w-full text-center space-y-6 shadow-2xl shadow-pink-600/20 relative animate-in fade-in zoom-in duration-200">
             <div className="w-16 h-16 bg-pink-600/20 border border-pink-500 text-amber-300 rounded-full flex items-center justify-center mx-auto">
@@ -703,13 +707,17 @@ export default function ContactPage(): React.ReactElement {
             <button
               type="button"
               onClick={closeModal}
-              className="w-full py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-xl font-bold hover:opacity-90 transition-opacity text-sm"
+              className="w-full py-3 bg-linear-to-r from-purple-600 to-pink-600 text-white rounded-xl font-bold hover:opacity-90 transition-opacity text-sm"
             >
               Entendido
             </button>
           </div>
         </div>
       )}
+     
     </div>
-  );
+    
+    </>
+   
+  )
 }
