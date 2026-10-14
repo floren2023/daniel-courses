@@ -31,15 +31,15 @@ const SLIDES = [
   },
   {
     id: 2,
-    title: "Crea Mundos Increíbles, personajes y Enemigos 3D",
+    title: "Crea Mundos Increíbles y personajes 3D",
     title1:" Transforma tu pasión por el anime y los videojuegos en tu profesión.",
     subtitle:
-      "Te enseñamos las técnicas avanzadas de modelado, texturizado y renderizado 3D para llevar tus ideas artísticas a la pantalla.",
+      "Te enseñamos las técnicas avanzadas de modelado, texturizado y renderizado 3D .",
     ctaText: "Ver Portafolio",
     ctaHref: "/portfolio",
     secondaryCtaText: "Contáctanos",
     secondaryCtaHref: "#contacto",
-    bgImage: "/home/portada2.jpg",
+    bgImage: "/home/portada1.png",
   },
   {
     id: 3,
@@ -87,16 +87,16 @@ export function HeroCarousel() {
               </div>
 
               {/* Contenido principal del Hero */}
-              <div className="relative z-10 flex h-full items-center justify-start  text-center px-4 sm:px-6 lg:px-10">
+              <div className="relative z-10 flex h-full    px-4 sm:px-6 lg:px-10">
                
                 <div className="max-w-2xl space-y-8 bg-black/40  p-8">
-                  <h1 className="text-2xl  font-semibold tracking-wide text-[#ff5fd0] sm:text-2xl md:text-6xl lg:text-3xl px-10">
+                  <h1 className="text-2xl   text-start justify-start font-semibold tracking-wide text-[#ff5fd0] sm:text-2xl md:text-6xl lg:text-3xl px-10">
                     {slide.title}
                   </h1>
-                  <h2 className="text-xl  text-center tracking-tight text-[#ff5fd0] sm:text-md md:text-md lg:text-xl">
+                  <h2 className="text-xl text-start justify-start tracking-tight text-[#ff5fd0] sm:text-md md:text-md lg:text-xl">
                     {slide.title1}
                   </h2>
-                  <p className="mx-auto lg:text-xl text-[#faec93] sm:text-sm md:text-md text-start px-10">
+                  <p className="mx-auto lg:text-xl text-start justify-start text-white sm:text-sm md:text-md  px-10">
                     {slide.subtitle}
                   </p>
 

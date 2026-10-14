@@ -1,11 +1,11 @@
 'use client';
 
-import Courses from '@/components/courses/pagina';
-import  Hero from '@/components/home/hero';
-import Navbar from '@/components/home/navbar';
-import Navbar1 from '@/components/home/navBar1';
 
-import { useState, useEffect } from 'react';
+import CursosDestacados from '@/components/home/cursosDestacados';
+import  Hero from '@/components/home/hero';
+import TestimonialSection from '@/components/home/testimonialSection';
+
+
 
 
   
@@ -19,7 +19,9 @@ const Page = () => {
    
 
      <Hero/>
-     <Courses/>
+     <CursosDestacados/>
+     <TestimonialSection/>
+     
      <img src="/palete.png" alt="palete" />
    
     </>

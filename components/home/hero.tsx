@@ -1,5 +1,6 @@
 import  { useEffect, useState } from 'react'
 import { HeroCarousel } from './heroCarousel'
+import { HeroFade } from './heroFade';
 
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -13,7 +14,7 @@ const Hero = () => {
     return <div className="w-full h-[80vh] bg-background" />;
   }
   return (
-    <HeroCarousel/>
+    <HeroFade/>
   )
 }
 

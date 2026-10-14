@@ -4,6 +4,7 @@ import "./globals.css";
 import { Spline } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Navbar1 from "@/components/home/navBar1";
+import Footer from "@/components/footer";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -76,7 +77,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={cn("h-full", "antialiased", albert_normal.variable, spline_normal.variable,exo_normal.variable, "font-sans", inter.variable)}
     >
       <body className=" bg-black">
-           <Navbar1/> {children}</body>
+           <Navbar1/> {children}
+           <Footer/></body>
     </html>
   );
 }
