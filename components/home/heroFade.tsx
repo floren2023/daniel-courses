@@ -107,7 +107,7 @@ export function HeroFade() {
                       <Button
                         size="lg"
                         
-                        className="w-full sm:w-auto text-base hover:text-[rgb(154,36,235)] transition-colors duration-500 hover:bg-black font-semibold px-8 py-6 bg-[rgb(154,36,235)]/80 text-black"
+                        className="w-full sm:w-auto text-base bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:text-white transition-colors duration-500 hover:bg-black font-semibold px-8 py-6 bg-[rgb(154,36,235)]/80 text-black"
                       >
                         <Link href={slide.secondaryCtaHref}>
                           {slide.secondaryCtaText}

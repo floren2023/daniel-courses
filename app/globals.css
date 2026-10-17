@@ -260,3 +260,25 @@
   font-weight: 800;
   font-style: normal;
 }
+.color1{
+  color:#9a24eb;
+
+}
+.color2{
+  color:#ff5fd0;
+
+}
+.color3{
+  color:#faec93;
+}
+.gradient{
+  background: hsla(260, 1%, 55%, 1);
+
+background: linear-gradient(45deg, hsla(260, 1%, 55%, 1) 0%, hsla(300, 14%, 7%, 1) 1%, hsla(0, 0%, 0%, 1) 4%, hsla(276, 83%, 53%, 1) 56%, hsla(318, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(45deg, hsla(260, 1%, 55%, 1) 0%, hsla(300, 14%, 7%, 1) 1%, hsla(0, 0%, 0%, 1) 4%, hsla(276, 83%, 53%, 1) 56%, hsla(318, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(45deg, hsla(260, 1%, 55%, 1) 0%, hsla(300, 14%, 7%, 1) 1%, hsla(0, 0%, 0%, 1) 4%, hsla(276, 83%, 53%, 1) 56%, hsla(318, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8C8B8E", endColorstr="#140F14", GradientType=1 );
+}

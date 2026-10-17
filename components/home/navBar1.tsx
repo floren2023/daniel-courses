@@ -8,7 +8,7 @@ export default function Navbar1() {
 
   const navLinks = [
     { name: 'Home', href: '/' },  
-    { name: 'Explora', href: '/courses' },
+    { name: 'Cursos', href: '/courses' },
     { name: 'Recursos', href: '/resources' },
     { name: 'Sobre nosotros', href: '/about' },
     { name: 'Contacto', href: '/contact' },
@@ -20,7 +20,7 @@ export default function Navbar1() {
         <div className="flex items-center justify-between ">
           
           {/* Logo a la izquierda */}
-          <div className="shrink-0 pt-4">
+          <div className="shrink-0 ">
             <Link 
               href="/" 
               
@@ -36,7 +36,7 @@ export default function Navbar1() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-[#faec93] hover:text-black p-1 rounded-md hover:bg-[#faec93]/80 font-medium transition-colors duration-200"
+                  className="text-amber-300 hover:text-black p-1 albert-normal rounded-md hover:bg-[#faec93]/80 font-semibold text-md transition-colors duration-200"
                 >
                   {link.name}
                 </Link>
@@ -46,7 +46,7 @@ export default function Navbar1() {
             {/* Botón Sign In para Escritorio */}
             <Link
               href="/signin"
-              className="bg-[rgb(154,36,235)] text-white px-2 py-1 rounded-md font-medium hover:bg-black hover:text-[rgb(154,36,235)] transition-colors duration-200 shadow-sm"
+              className="bg-[rgb(154,36,235)] text-white px-2 py-1 rounded-md font-medium albert-normal hover:bg-black hover:text-[rgb(154,36,235)] transition-colors duration-200 shadow-sm"
             >
               Sign In
             </Link>

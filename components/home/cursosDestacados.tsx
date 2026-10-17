@@ -10,9 +10,9 @@ const CursosDestacados = () => {
     
        
          <section className="mx-auto text-center mt-10 bg-black ">
-              <h2 className=" mt-10 text-2xl sm:text-4xl font-extrabold text-amber-200/70 tracking-wide uppercase">
+              <div className=" mt-10 text-xl sm:text-2xl antonio-normal font-extrabold text-amber-200/70 tracking-wide uppercase">
            Cursos Destacados
-          </h2>
+          </div>
                 
              {result!=undefined&&(
                         

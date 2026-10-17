@@ -1,32 +1,22 @@
-'use client';
+"use client";
 
+import LogoCarousel from "@/components/carouselLogo";
+import CursosDestacados from "@/components/home/cursosDestacados";
+import Hero from "@/components/home/hero";
+import TestimonialSection from "@/components/home/testimonialSection";
 
-import CursosDestacados from '@/components/home/cursosDestacados';
-import  Hero from '@/components/home/hero';
-import TestimonialSection from '@/components/home/testimonialSection';
-
-
-
-
-  
 const Page = () => {
-
-    
-
-  
   return (
     <>
-   
+      <Hero />
 
-     <Hero/>
-     <CursosDestacados/>
-     <TestimonialSection/>
-     
-     <img src="/palete.png" alt="palete" />
-   
+      <CursosDestacados />
+      <div className=" bg-black">
+        <LogoCarousel speed={20} pauseOnHover={true} />
+      </div>
+      <TestimonialSection />
     </>
-    
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
